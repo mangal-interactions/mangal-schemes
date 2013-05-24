@@ -21,7 +21,7 @@
     },
     "location": {
       "description": "The location as in lat/lon of the network",
-      "$ref$: "http://json-schema.org/geo"
+      "$ref": "http://json-schema.org/geo"
     },
     "comments": {
       "description": "Additional comments on the network",
