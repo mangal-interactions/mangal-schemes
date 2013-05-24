@@ -23,9 +23,14 @@
       "description": "The location as in lat/lon of the network",
       "$ref$: "http://json-schema.org/geo"
     },
-    "comments"; {
+    "comments": {
       "description": "Additional comments on the network",
       "type": "string"
+    },
+    "environment": {
+      "description": "Access key for the set of environmental conditions",
+      "type": "string"
+    }
   },
   "required": ["id", "interactions"]
 }
