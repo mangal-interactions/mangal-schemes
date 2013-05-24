@@ -1,4 +1,5 @@
-mangal-schemes
-==============
+# mangal JSOn schemes and examples
 
-JSON schemes for the mangal project
+Stable releases will be tagged
+
+Released under the terms of the GPL
