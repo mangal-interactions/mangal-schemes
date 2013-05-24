@@ -7,6 +7,13 @@
     "id": {
       "description": "Access code for the network in the local database",
       "type": "string"
+    },
+    "interactions": {
+      "description": "A list of access codes for interactions constituting this network",
+      "type": "array",
+      "items": {
+	"type": "string"
+      }
     }
   },
   "required": ["id", "interactions"]
