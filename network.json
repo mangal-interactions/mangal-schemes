@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Network of ecological interactions",
+  "description": "Contains a list of interactions, along with general informations on sampling methodology",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for the network in the local database",
+      "type": "string"
+    }
+  },
+  "required": ["id", "interactions"]
+}
