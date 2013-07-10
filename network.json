@@ -8,6 +8,10 @@
       "description": "Access code for the network in the local database",
       "type": "string"
     },
+    "name": {
+    	"description": "Name of the network",
+      "type": "string"
+    },
     "interactions": {
       "description": "A list of access codes for interactions constituting this network",
       "type": "array",
