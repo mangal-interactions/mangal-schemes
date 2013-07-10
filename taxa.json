@@ -16,5 +16,6 @@
        "description": "Vernacular name of the taxa",
        "type": "string"
     }
+  },
   "required": ["id", "name"]
 }
