@@ -6,3 +6,4 @@ lint: schemes/*.json
 	jsonlint schemes/environment.json --compact --quiet
 	jsonlint schemes/interaction.json --compact --quiet
 	jsonlint schemes/network.json --compact --quiet
+	jsonlint schemes/dataset.json --compact --quiet

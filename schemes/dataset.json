@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Dataset",
+  "description": "Describes a dataset, and gives bibliographic informations",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for the dataset in the local database",
+      "type": "string"
+    },
+    "name": {
+    	"description": "Name of the dataset",
+      "type": "string"
+    },
+    "description": {
+       "description": "Some additional informations about the dataset",
+       "type": "string"
+    },
+    "doi": {
+       "description": "DOI of original publication",
+       "type": "integer"
+    },
+    "figshare": {
+       "description": "DOI of the data on figshare",
+       "type": "integer"
+    },
+    "networks": {
+       "description": "List of networks ID",
+       "type": "array",
+       "items": {
+          "type": "string"
+       },
+       "minItems": 1,
+       "uniqueItems": true
+    }
+  },
+  "required": ["id", "name", "networks"]
+}
