@@ -8,7 +8,7 @@ Schemes **must** validate on [JSONLint](http://jsonlint.com/), and conform to th
 
 To check that the schemes validate, download [`jsonlint`][jlint], and run `make`. It should return with no errors. If it's not the case, correct the schemes.
 
-Stable versions of the specification will be tagged, using the *release* system.
+Stable versions of the specification will be tagged, using the *release* system. Any version number *lower* than `1.0` means that the specification is functionnal, but not frozen. Any version number higher than, or equal to, `1.0`, means that future version will be backward compatible (see below).
 
 ## Informations on update
 
