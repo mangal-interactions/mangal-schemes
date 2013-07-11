@@ -9,7 +9,7 @@
       "type": "string"
     },
     "metaweb": {
-       "description": "True is the network is a metaweb",
+       "description": "True if the network is a metaweb",
        "type": "boolean"
     },
     "name": {
@@ -21,7 +21,9 @@
       "type": "array",
       "items": {
 	"type": "string"
-      }
+      },
+      "minItems": 1,
+      "uniqueItems": true
     },
     "date": {
       "description": "Time at which the network was sampled",
