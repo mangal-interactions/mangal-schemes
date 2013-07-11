@@ -15,6 +15,26 @@
     "vernacular": {
        "description": "Vernacular name of the taxa",
        "type": "string"
+    },
+    "description": {
+       "description": "Some additional informations about the taxa",
+       "type": "text"
+    },
+    "ncbi": {
+       "description": "NCBI Taxonomy identifier",
+       "type": "integer"
+    },
+    "itis": {
+       "description": "ITIS identifier",
+       "type": "integer"
+    },
+    "gbif": {
+       "description": "GBIF identifier",
+       "type": "integer"
+    },
+    "bold": {
+       "description": "BOLD identifier",
+       "type": "integer"
     }
   },
   "required": ["id", "name"]
