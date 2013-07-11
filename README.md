@@ -20,7 +20,7 @@ Examples are stored in the folder `examples`. They should (1) be valid against `
 
 ## Legalese
 
-Released under the terms of the BDS licence.
+Released under the terms of the BSD licence.
 
 Forking this repo is an implicit acceptation that any change you make to your fork can be pulled back and distributed under the terms of the BSD licence.
 
