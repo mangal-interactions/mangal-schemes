@@ -20,9 +20,9 @@ Examples are stored in the folder `examples`. They should (1) be valid against `
 
 ## Legalese
 
-Released under the terms of the BSD licence.
+This project, and all files within, is released under the terms of the Simplified BSD license, a copy of which is included at the root of the project.
 
-Forking this repo is an implicit acceptation that any change you make to your fork can be pulled back and distributed under the terms of the BSD licence.
+Forking this repository or otherwise copying this project in a public space constitutes implicit acceptation that any change you make to your fork or version can be pulled back and distributed under the terms of the Simplified BSD licence, with acknowledgement of your contribution.
 
 [jlint]: https://github.com/zaach/jsonlint
 [valid]: https://github.com/fge/json-schema-validator
