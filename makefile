@@ -1,5 +1,5 @@
-lint: *.json
-	jsonlint taxa.json --compact --quiet
-	jsonlint population.json --compact --quiet
-	jsonlint interaction.json --compact --quiet
-	jsonlint network.json --compact --quiet
+lint: schemes/*.json
+	jsonlint schemes/taxa.json --compact --quiet
+	jsonlint schemes/population.json --compact --quiet
+	jsonlint schemes/interaction.json --compact --quiet
+	jsonlint schemes/network.json --compact --quiet
