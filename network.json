@@ -8,6 +8,10 @@
       "description": "Access code for the network in the local database",
       "type": "string"
     },
+    "metaweb": {
+       "description": "True is the network is a metaweb",
+       "type": "boolean"
+    },
     "name": {
     	"description": "Name of the network",
       "type": "string"
@@ -27,8 +31,8 @@
       "description": "The location as in lat/lon of the network",
       "$ref": "http://json-schema.org/geo"
     },
-    "comments": {
-      "description": "Additional comments on the network",
+    "description": {
+      "description": "Additional informations on the network",
       "type": "string"
     },
     "environment": {
