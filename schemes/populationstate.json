@@ -36,5 +36,5 @@
       "type": "string"
     }
   },
-  "required": ["id", "interactions"]
+  "required": ["id", "population", "name"]
 }
