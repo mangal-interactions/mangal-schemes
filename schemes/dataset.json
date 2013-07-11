@@ -18,11 +18,11 @@
     },
     "doi": {
        "description": "DOI of original publication",
-       "type": "integer"
+       "type": "string"
     },
     "figshare": {
        "description": "DOI of the data on figshare",
-       "type": "integer"
+       "type": "string"
     },
     "networks": {
        "description": "List of networks ID",
