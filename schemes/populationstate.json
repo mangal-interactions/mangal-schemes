@@ -16,6 +16,10 @@
     	"description": "Name of the population state",
       "type": "string"
     },
+    "specieslevel": {
+       "description": "True if this population state represents the whole species as used in metawebs",
+       "type": "boolean"
+    },
     "traits": {
       "description": "Identifiers of the traits values for this population",
       "type": "array",
