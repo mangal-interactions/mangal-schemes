@@ -29,7 +29,7 @@
     },
     "size": {
       "description": "Size of the population",
-      "type": "float"
+      "type": "number"
     },
     "units": {
        "description": "Units in which the population size was measured",

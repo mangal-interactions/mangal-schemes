@@ -14,7 +14,7 @@
     },
     "value": {
        "description": "Value",
-       "type": "float"
+       "type": "number"
     },
     "units": {
        "description": "Units",

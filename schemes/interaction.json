@@ -31,7 +31,7 @@
     },
     "strength": {
        "description": "Strength of the interaction",
-       "type": "float"
+       "type": "number"
     },
     "units": {
        "description": "Units in which the strength was measured",
