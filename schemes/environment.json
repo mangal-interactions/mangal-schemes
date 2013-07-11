@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Environmental conditions",
+  "description": "Value of environmental conditions at the time of network sampling",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for the environmental condition in the local database",
+      "type": "string"
+    },
+    "name": {
+    	"description": "Measured property",
+      "type": "string"
+    },
+    "value": {
+       "description": "Value",
+       "type": "float"
+    },
+    "units": {
+       "description": "Units",
+       "type": "string"
+    },
+    "description": {
+       "description": "Additional details on the condition measured",
+       "type": "string"
+    }
+  },
+  "required": ["id", "name", "value", "units"]
+}
