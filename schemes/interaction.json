@@ -39,7 +39,7 @@
     },
     "description": {
        "description": "Some additional informations about the population",
-       "type": "text"
+       "type": "string"
     }
   },
   "required": ["id", "pop_from", "pop_to", "directional", "quantitative"]

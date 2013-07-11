@@ -18,7 +18,7 @@
     },
     "description": {
        "description": "Some additional informations about the population",
-       "type": "text"
+       "type": "string"
     }
   },
   "required": ["id", "name", "taxa"]
