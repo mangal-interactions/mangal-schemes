@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "State of a population",
+  "description": "Contains information about the state of a population when the network was sampled",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for population state",
+      "type": "string"
+    },
+    "population": {
+       "description": "Identifier of the population for which the state is measures",
+       "type": "string"
+    },
+    "name": {
+    	"description": "Name of the population state",
+      "type": "string"
+    },
+    "traits": {
+      "description": "Identifiers of the traits values for this population",
+      "type": "array",
+      "items": {
+	"type": "string"
+      }
+    },
+    "size": {
+      "description": "Size of the population",
+      "type": "float"
+    },
+    "units": {
+       "description": "Units in which the population size was measured",
+       "type": "string"
+    },
+    "description": {
+      "description": "Additional informations on the population",
+      "type": "string"
+    }
+  },
+  "required": ["id", "interactions"]
+}
