@@ -1,0 +1,14 @@
+{
+   "id": "1",
+   "name": "Network 0",
+   "description": "Network at the start of the spatial gradient",
+   "metaweb": false,
+   "interactions": ["1","2","3"],
+   "date": "2012-06-11",
+   "location": {
+      "latitude": -78.75,
+      "longitude": 20.4
+   },
+   "environment": ["22","23","25"]
+}
+
