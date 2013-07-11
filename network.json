@@ -36,8 +36,11 @@
       "type": "string"
     },
     "environment": {
-      "description": "Access key for the set of environmental conditions",
-      "type": "string"
+      "description": "Access keys for the sets of environmental conditions",
+      "type": "array",
+      "items": {
+         "type": "string"
+      }
     }
   },
   "required": ["id", "interactions"]
