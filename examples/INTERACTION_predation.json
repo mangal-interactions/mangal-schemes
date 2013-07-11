@@ -1,0 +1,8 @@
+{
+   "id": "1",
+   "ecotype": "predation",
+   "pop_from": "1",
+   "pop_to": "2",
+   "directional": true,
+   "quantitative": false
+}
