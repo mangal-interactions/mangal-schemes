@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Taxa (any level of the taxonomic classification)",
+  "description": "General information about a taxa, along with digital identifiers",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for the taxa in the local database",
+      "type": "string"
+    },
+    "name": {
+    	"description": "Scientific or binomial name of the taxa",
+      "type": "string"
+    },
+    "vernacular": {
+       "description": "Vernacular name of the taxa",
+       "type": "string"
+    },
+    "description": {
+       "description": "Some additional informations about the taxa",
+       "type": "string"
+    },
+    "ncbi": {
+       "description": "NCBI Taxonomy identifier",
+       "type": "integer"
+    },
+    "itis": {
+       "description": "ITIS identifier",
+       "type": "integer"
+    },
+    "gbif": {
+       "description": "GBIF identifier",
+       "type": "integer"
+    },
+    "bold": {
+       "description": "BOLD identifier",
+       "type": "integer"
+    }
+  },
+  "required": ["id", "name"]
+}

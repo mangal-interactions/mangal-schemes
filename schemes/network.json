@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Network of ecological interactions",
+  "description": "Contains a list of interactions, along with general informations on sampling methodology",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Access code for the network in the local database",
+      "type": "string"
+    },
+    "metaweb": {
+       "description": "True is the network is a metaweb",
+       "type": "boolean"
+    },
+    "name": {
+    	"description": "Name of the network",
+      "type": "string"
+    },
+    "interactions": {
+      "description": "A list of access codes for interactions constituting this network",
+      "type": "array",
+      "items": {
+	"type": "string"
+      }
+    },
+    "date": {
+      "description": "Time at which the network was sampled",
+      "type": "string"
+    },
+    "location": {
+      "description": "The location as in lat/lon of the network",
+      "$ref": "http://json-schema.org/geo"
+    },
+    "description": {
+      "description": "Additional informations on the network",
+      "type": "string"
+    },
+    "environment": {
+      "description": "Access keys for the sets of environmental conditions",
+      "type": "array",
+      "items": {
+         "type": "string"
+      }
+    }
+  },
+  "required": ["id", "interactions"]
+}
