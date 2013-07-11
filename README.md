@@ -14,8 +14,15 @@ Stable versions of the specification will be tagged, using the *release* system.
 
 Updates will be add-only, *i.e.* no element of the specification can be removed
 
+## Examples
+
+Examples are stored in the folder `examples`. They should (1) be valid against `jsonlint` on their own, and (2) be valid against their scheme. Currently `jsonlint` does not work with the `v4` draft specification, so validation against the scheme must be done [online][valid].
+
 ## Legalese
 
-Released under the terms of the GPL
+Released under the terms of the BDS licence.
+
+Forking this repo is an implicit acceptation that any change you make to your fork can be pulled back and distributed under the terms of the BSD licence.
 
 [jlint]: https://github.com/zaach/jsonlint
+[valid]: https://github.com/fge/json-schema-validator

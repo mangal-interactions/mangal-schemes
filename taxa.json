@@ -18,7 +18,7 @@
     },
     "description": {
        "description": "Some additional informations about the taxa",
-       "type": "text"
+       "type": "string"
     },
     "ncbi": {
        "description": "NCBI Taxonomy identifier",
