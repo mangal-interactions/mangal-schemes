@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "description": "Access code for the population in the local database",
+      "description": "Access code for the interaction in the local database",
       "type": "string"
     },
     "ecotype": {
@@ -21,22 +21,23 @@
        "description": "ID of the population receiving the interaction",
        "type": "string"
     },
-    "directional": {
-       "description": "Tells whether the interaction is directional",
-       "type": "boolean"
-    },
-    "quantitative": {
-       "description": "Tells whether the interaction is quantitative",
-       "type": "boolean"
-    },
-    "strength": {
-       "description": "Strength of the interaction",
+    "strength_f": {
+       "description": "Strength of the interaction for the FROM population",
        "type": "number"
     },
-    "units": {
+    "units_f": {
        "description": "Units in which the strength was measured",
        "type": "string"
     },
+    "strength_t": {
+       "description": "Strength of the interaction for the TO population",
+       "type": "number"
+    },
+    "units_t": {
+       "description": "Units in which the strength was measured",
+       "type": "string"
+    },
+
     "description": {
        "description": "Some additional informations about the population",
        "type": "string"
