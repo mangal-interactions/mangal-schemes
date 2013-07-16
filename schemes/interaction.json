@@ -11,7 +11,7 @@
     "ecotype": {
        "description": "Type of ecological interaction",
        "type": "string",
-       "enum": ["predation","parasitism","competition","pollination","herbivory"]
+       "enum": ["predation","ectoparasitism","endoparasitism","intra-cellular parasitism","parasitoidism","mycoheterotrophy","antixenosis","teletoxy","amensalism","antibiosis","allelopathy","competition","facilitation","refuge creation","inquilinism","phoresis","epibiosis","epibiosis","pollination","mutualistic symbiosis","zoochory","mutual protection"]
     },
     "pop_from": {
        "description": "ID of the population establishing the interaction",
