@@ -16,6 +16,11 @@
     	"description": "Name of the population state",
       "type": "string"
     },
+    "stage": {
+       "description": "Life stage of the population",
+       "type": "string",
+       "enum": ["seed", "juvenile", "adult", "dead", "larva", "all"]
+    },
     "specieslevel": {
        "description": "True if this population state represents the whole species as used in metawebs",
        "type": "boolean"
@@ -40,5 +45,5 @@
       "type": "string"
     }
   },
-  "required": ["id", "population", "name"]
+  "required": ["id", "population", "name", "stage"]
 }

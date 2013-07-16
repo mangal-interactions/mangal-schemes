@@ -4,6 +4,7 @@
    "name": "time-point 2",
    "specieslevel": false,
    "traits": ["1","2","5"],
+   "stage": "all",
    "size": 0.452,
    "units": "O.D. units",
    "description": "O.D. measure after 48 hours"
