@@ -43,5 +43,5 @@
        "type": "string"
     }
   },
-  "required": ["id", "pop_from", "pop_to", "directional", "quantitative"]
+  "required": ["pop_from", "pop_to", "directional", "quantitative"]
 }

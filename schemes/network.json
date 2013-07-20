@@ -45,5 +45,5 @@
       }
     }
   },
-  "required": ["id", "interactions"]
+  "required": ["name","interactions"]
 }

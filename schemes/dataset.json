@@ -40,5 +40,5 @@
        "uniqueItems": true
     }
   },
-  "required": ["id", "name", "networks"]
+  "required": ["name", "networks"]
 }

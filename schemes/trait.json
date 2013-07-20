@@ -25,5 +25,5 @@
        "type": "string"
     }
   },
-  "required": ["id", "name", "value", "units"]
+  "required": ["name", "value", "units"]
 }
