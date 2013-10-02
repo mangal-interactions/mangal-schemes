@@ -1,9 +1,12 @@
+VAR = --compact --quiet
+EXEC = jsonlint
+
 lint: schemes/*.json
-	jsonlint schemes/taxa.json --compact --quiet
-	jsonlint schemes/population.json --compact --quiet
-	jsonlint schemes/populationstate.json --compact --quiet
-	jsonlint schemes/trait.json --compact --quiet
-	jsonlint schemes/environment.json --compact --quiet
-	jsonlint schemes/interaction.json --compact --quiet
-	jsonlint schemes/network.json --compact --quiet
-	jsonlint schemes/dataset.json --compact --quiet
+	$(EXEC) schemes/taxa.json $(VAR)
+	$(EXEC) schemes/population.json $(VAR)
+	$(EXEC) schemes/populationstate.json $(VAR)
+	$(EXEC) schemes/trait.json $(VAR)
+	$(EXEC) schemes/environment.json $(VAR)
+	$(EXEC) schemes/interaction.json $(VAR)
+	$(EXEC) schemes/network.json $(VAR)
+	$(EXEC) schemes/dataset.json $(VAR)
