@@ -26,10 +26,6 @@
        "type": "string",
        "enum": ["seed", "juvenile", "adult", "dead", "larva", "all"]
     },
-    "specieslevel": {
-       "description": "True if this population state represents the whole species as used in metawebs",
-       "type": "boolean"
-    },
     "traits": {
       "description": "Identifiers of the traits values for this population",
       "type": "array",
@@ -50,5 +46,5 @@
       "type": "string"
     }
   },
-  "required": ["population", "name", "stage"]
+  "required": ["population", "name", "stage", "level"]
 }
