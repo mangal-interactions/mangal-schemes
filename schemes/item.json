@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "State of a population",
+  "title": "Item within a population of a population",
   "description": "Contains information about the state of a population when the network was sampled",
   "type": "object",
   "properties": {
@@ -8,6 +8,11 @@
       "description": "Access code for population state",
       "type": "string"
     },
+    "level": {
+       "description": "Whether the item is a population or individual",
+       "type": "string",
+       "enum": ["individual","population"]
+    }
     "population": {
        "description": "Identifier of the population for which the state is measures",
        "type": "string"
