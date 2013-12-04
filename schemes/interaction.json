@@ -29,12 +29,12 @@
        "description": "ID of the population receiving the interaction",
        "type": "string"
     },
-    "state_from": {
-       "description": "ID of the population state establishing the interaction",
+    "item_from": {
+       "description": "ID of the population state or individual establishing the interaction",
        "type": "string"
     },
-    "state_to": {
-       "description": "ID of the population state receiving the interaction",
+    "item_to": {
+       "description": "ID of the population state or individual receiving the interaction",
        "type": "string"
     },
     "strength_f": {
