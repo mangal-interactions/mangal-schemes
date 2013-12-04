@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Interaction object",
-  "description": "General information about an iteraction",
+  "description": "General information about an iteraction -- the ID of the taxa MUST be given, the ID of the population and states CAN be given",
   "type": "object",
   "properties": {
     "id": {
@@ -13,12 +13,28 @@
        "type": "string",
        "enum": ["predation","ectoparasitism","endoparasitism","intra-cellular parasitism","parasitoidism","mycoheterotrophy","antixenosis","teletoxy","amensalism","antibiosis","allelopathy","competition","facilitation","refuge creation","inquilinism","phoresis","epibiosis","epibiosis","pollination","mutualistic symbiosis","zoochory","mutual protection"]
     },
+    "taxa_from": {
+       "description": "ID of the taxa establishing the interaction",
+       "type": "string"
+    },
+    "taxa_to": {
+       "description": "ID of the taxa receiving the interaction",
+       "type": "string"
+    },
     "pop_from": {
        "description": "ID of the population establishing the interaction",
        "type": "string"
     },
     "pop_to": {
        "description": "ID of the population receiving the interaction",
+       "type": "string"
+    },
+    "state_from": {
+       "description": "ID of the population state establishing the interaction",
+       "type": "string"
+    },
+    "state_to": {
+       "description": "ID of the population state receiving the interaction",
        "type": "string"
     },
     "strength_f": {
@@ -43,5 +59,5 @@
        "type": "string"
     }
   },
-  "required": ["pop_from", "pop_to", "directional", "quantitative"]
+  "required": ["taxa_from", "taxa_to", "directional", "quantitative"]
 }
