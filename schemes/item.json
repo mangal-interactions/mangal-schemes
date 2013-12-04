@@ -12,7 +12,7 @@
        "description": "Whether the item is a population or individual",
        "type": "string",
        "enum": ["individual","population"]
-    }
+    },
     "population": {
        "description": "Identifier of the population for which the state is measures",
        "type": "string"
