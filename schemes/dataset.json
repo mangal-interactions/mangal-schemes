@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Dataset",
-  "description": "Describes a dataset, and gives bibliographic informations",
+  "description": "Describes a dataset, and gives associated bibliographic informations. Datasets are a collection of networks, published in one or several studies.",
   "type": "object",
   "properties": {
     "id": {
-      "description": "Access code for the dataset in the local database",
+      "description": "Access code for the dataset in the local database.",
       "type": "string"
     },
     "name": {
@@ -13,18 +13,18 @@
       "type": "string"
     },
     "description": {
-       "description": "Some additional informations about the dataset",
+       "description": "Some additional informations about the dataset.",
        "type": "string"
     },
     "papers": {
-       "description": "DOIs for original publications",
+       "description": "Informations on the papers describing the dataset.",
        "type": "array",
        "items": {
           "type": "string"
        }
     },
     "data": {
-       "description": "DOI for the datasets",
+       "description": "Informations on the data (can be the DOI of the dataset, or identifiers on where the dataset was published)",
        "type": "array",
        "items": {
           "type": "string"
