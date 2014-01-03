@@ -1,40 +1,40 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Item within a population of a population",
-  "description": "Contains information about the state of a population when the network was sampled",
+  "title": "Item within a population",
+  "description": "Items are a central concept in the data specification. An item belongs to a population, and can be either the state of this population as measured at a given time point, or an individual within this population.",
   "type": "object",
   "properties": {
     "id": {
-      "description": "Access code for population state",
+      "description": "Access code for the item",
       "type": "string"
     },
     "level": {
-       "description": "Whether the item is a population or individual",
+       "description": "Whether the item is the state of the population or an individual",
        "type": "string",
        "enum": ["individual","population"]
     },
     "population": {
-       "description": "Identifier of the population for which the state is measures",
+       "description": "Identifier of the population to which the item belongs",
        "type": "string"
     },
     "name": {
-    	"description": "Name of the population state",
+    	"description": "Name of the item",
       "type": "string"
     },
     "stage": {
-       "description": "Life stage of the population",
+       "description": "Life stage of the item.",
        "type": "string",
        "enum": ["seed", "juvenile", "adult", "dead", "larva", "all"]
     },
     "traits": {
-      "description": "Identifiers of the traits values for this population",
+      "description": "Identifiers of the traits values for this item",
       "type": "array",
       "items": {
 	"type": "string"
       }
     },
     "size": {
-      "description": "Size of the population",
+      "description": "Number of individuals (if level is population)",
       "type": "number"
     },
     "units": {
@@ -42,7 +42,7 @@
        "type": "string"
     },
     "description": {
-      "description": "Additional informations on the population",
+      "description": "Additional informations on the item",
       "type": "string"
     }
   },
