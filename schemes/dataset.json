@@ -13,18 +13,18 @@
       "type": "string"
     },
     "description": {
-       "description": "Some additional informations about the dataset.",
+       "description": "A short description of the dataset.",
        "type": "string"
     },
     "papers": {
-       "description": "Informations on the papers describing the dataset.",
+       "description": "ID of the reference resource for the paper(s) in which the dataset was first published/used, or other significant papers related to this dataset.",
        "type": "array",
        "items": {
-          "type": "string"
+          "type": "string",
        }
     },
     "data": {
-       "description": "Informations on the data (can be the DOI of the dataset, or identifiers on where the dataset was published)",
+       "description": "ID of the resource for the data themselves (i.e. data paper, figshare or datadryad DOI, ...)",
        "type": "array",
        "items": {
           "type": "string"
