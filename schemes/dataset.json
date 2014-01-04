@@ -20,7 +20,7 @@
        "description": "ID of the reference resource for the paper(s) in which the dataset was first published/used, or other significant papers related to this dataset.",
        "type": "array",
        "items": {
-          "type": "string",
+          "type": "string"
        }
     },
     "data": {
