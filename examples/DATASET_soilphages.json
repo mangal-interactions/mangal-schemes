@@ -1,8 +1,0 @@
-{
-   "id": "1",
-   "name": "Bipartite networks of bacteria and phages in soil",
-   "description": "Five networks between fluorescent pseudomonads and lytics phages in an undisturbed soil patch",
-   "doi": "10.1186/2192-1709-2-13",
-   "figshare": "10.6084/m9.figshare.696102",
-   "networks": ["1","2","3","4","5"]
-}

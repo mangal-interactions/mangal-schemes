@@ -1,8 +1,0 @@
-{
-   "id": "1",
-   "ecotype": "predation",
-   "taxa_from": "1",
-   "taxa_to": "2",
-   "directional": "TRUE",
-   "quantitative": "FALSE"
-}

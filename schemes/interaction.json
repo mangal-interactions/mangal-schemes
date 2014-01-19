@@ -1,63 +1,132 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Interaction object",
-  "description": "General information about an iteraction -- the ID of the taxa MUST be given, the ID of the population and states CAN be given",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "Access code for the interaction in the local database",
-      "type": "string"
-    },
-    "ecotype": {
-       "description": "Type of ecological interaction",
-       "type": "string",
-       "enum": ["predation","ectoparasitism","endoparasitism","intra-cellular parasitism","parasitoidism","mycoheterotrophy","antixenosis","teletoxy","amensalism","antibiosis","allelopathy","competition","facilitation","refuge creation","inquilinism","phoresis","epibiosis","epibiosis","pollination","mutualistic symbiosis","zoochory","mutual protection"]
-    },
-    "taxa_from": {
-       "description": "ID of the taxa establishing the interaction",
-       "type": "string"
-    },
-    "taxa_to": {
-       "description": "ID of the taxa receiving the interaction",
-       "type": "string"
-    },
-    "pop_from": {
-       "description": "ID of the population establishing the interaction",
-       "type": "string"
-    },
-    "pop_to": {
-       "description": "ID of the population receiving the interaction",
-       "type": "string"
-    },
-    "item_from": {
-       "description": "ID of the population state or individual establishing the interaction",
-       "type": "string"
-    },
-    "item_to": {
-       "description": "ID of the population state or individual receiving the interaction",
-       "type": "string"
-    },
-    "strength_f": {
-       "description": "Strength of the interaction for the FROM population",
-       "type": "number"
-    },
-    "units_f": {
-       "description": "Units in which the strength was measured",
-       "type": "string"
-    },
-    "strength_t": {
-       "description": "Strength of the interaction for the TO population",
-       "type": "number"
-    },
-    "units_t": {
-       "description": "Units in which the strength was measured",
-       "type": "string"
-    },
-
-    "description": {
-       "description": "Some additional informations about the population",
-       "type": "string"
-    }
-  },
-  "required": ["taxa_from", "taxa_to", "directional", "quantitative"]
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "properties": {
+        "description": {
+            "description": "A description of the interaction", 
+            "type": "string"
+        }, 
+        "environment": {
+            "description": "List of identifiers (or URIs) of the environments associated to the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "id": {
+            "description": "Integer data. Ex: 2673", 
+            "type": "integer"
+        }, 
+        "item_from": {
+            "description": "Identifier (or URI) of the item establishing the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "item_to": {
+            "description": "Identifier (or URI) of the item receiving the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "link_type": {
+            "description": "The type of interaction", 
+            "enum": [
+                "predation", 
+                "ectoparasitism", 
+                "endoparasitism", 
+                "intra-cellular parasitism", 
+                "parasitoidism", 
+                "mycoheterotrophy", 
+                "antixenosis", 
+                "teletoxy", 
+                "amensalism", 
+                "antibiosis", 
+                "allelopathy", 
+                "competition", 
+                "facilitation", 
+                "refuge creation", 
+                "inquilinism", 
+                "phoresis", 
+                "epibiosis", 
+                "pollination", 
+                "mutualistic symbiosis", 
+                "zoochory", 
+                "mutual protection"
+            ], 
+            "type": "string"
+        }, 
+        "obs_type": {
+            "description": "How the interaction was observed", 
+            "enum": [
+                "unspecified", 
+                "observation", 
+                "litterature", 
+                "absence", 
+                "inferred"
+            ], 
+            "type": "string"
+        }, 
+        "owner": {
+            "description": "Who uploaded the data. URI of the data owner.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "pop_from": {
+            "description": "Identifier (or URI) of the pop. establishing the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "pop_to": {
+            "description": "Identifier (or URI) of the pop. receiving the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "strength_f": {
+            "description": "The strength of the interaction for the item ESTABLISHING the interaction", 
+            "type": "float"
+        }, 
+        "strength_t": {
+            "description": "The strength of the interaction for the item RECEVING the interaction", 
+            "type": "float"
+        }, 
+        "taxa_from": {
+            "description": "Identifier (or URI) of the taxa establishing the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "taxa_to": {
+            "description": "Identifier (or URI) of the taxa receiving the interaction.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "units_f": {
+            "description": "Units in which the interaction strength is measured", 
+            "type": "string"
+        }, 
+        "units_t": {
+            "description": "Units in which the interaction strength is measured", 
+            "type": "string"
+        }
+    }, 
+    "required": [
+        "taxa_to", 
+        "obs_type", 
+        "owner", 
+        "taxa_from", 
+        "link_type"
+    ], 
+    "title": "Autogenerated JSON schema", 
+    "type": "object"
 }
