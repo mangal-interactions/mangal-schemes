@@ -35,10 +35,7 @@
         }, 
         "owner": {
             "description": "URI of the taxa owner. When submitting from the R package, this field is populated automatically.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "status": {
             "description": "The taxonomic status of the taxa.", 

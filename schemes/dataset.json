@@ -36,10 +36,7 @@
         }, 
         "owner": {
             "description": "A single related resource. Can be either a URI or set of nested resource data.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "papers": {
             "description": "List of identifiers (or URIs) of the references to the papers associated with the dataset.", 

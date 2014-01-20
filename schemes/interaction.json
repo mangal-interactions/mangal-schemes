@@ -18,17 +18,11 @@
         }, 
         "item_from": {
             "description": "Identifier (or URI) of the item establishing the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "item_to": {
             "description": "Identifier (or URI) of the item receiving the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "link_type": {
             "description": "The type of interaction", 
@@ -70,24 +64,15 @@
         }, 
         "owner": {
             "description": "Who uploaded the data. URI of the data owner.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "pop_from": {
             "description": "Identifier (or URI) of the pop. establishing the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "pop_to": {
             "description": "Identifier (or URI) of the pop. receiving the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "strength_f": {
             "description": "The strength of the interaction for the item ESTABLISHING the interaction", 
@@ -99,17 +84,11 @@
         }, 
         "taxa_from": {
             "description": "Identifier (or URI) of the taxa establishing the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "taxa_to": {
             "description": "Identifier (or URI) of the taxa receiving the interaction.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "units_f": {
             "description": "Units in which the interaction strength is measured", 

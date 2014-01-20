@@ -23,17 +23,11 @@
         }, 
         "owner": {
             "description": "A single related resource. Can be either a URI or set of nested resource data.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "population": {
             "description": "The identifier (or URI) of the population object to which the item belongs.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "public": {
             "description": "Boolean data. Ex: True", 

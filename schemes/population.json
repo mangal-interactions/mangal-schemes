@@ -15,17 +15,11 @@
         }, 
         "owner": {
             "description": "A single related resource. Can be either a URI or set of nested resource data.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "taxa": {
             "description": "The identifier (or URI) of the taxa object to which the population belongs.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }
     }, 
     "required": [

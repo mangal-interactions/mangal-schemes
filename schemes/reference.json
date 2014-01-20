@@ -15,10 +15,7 @@
         }, 
         "owner": {
             "description": "URI of the profile of the owner. When objects are uploaded from the R package, this field is set automatically.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "pmid": {
             "description": "PubMed ID of the reference object", 

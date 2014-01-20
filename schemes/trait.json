@@ -15,10 +15,7 @@
         }, 
         "owner": {
             "description": "A single related resource. Can be either a URI or set of nested resource data.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
+            "type": "string"
         }, 
         "units": {
             "description": "Units in which the trait was measured", 
