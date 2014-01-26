@@ -35,7 +35,7 @@
         }, 
         "size": {
             "description": "If the item is a population, the number of individuals or biomass", 
-            "type": "float"
+            "type": "number"
         }, 
         "stage": {
             "description": "The stage of the item, to be selected in the list of allowed values", 

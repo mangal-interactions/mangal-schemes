@@ -76,11 +76,11 @@
         }, 
         "strength_f": {
             "description": "The strength of the interaction for the item ESTABLISHING the interaction", 
-            "type": "float"
+            "type": "number"
         }, 
         "strength_t": {
             "description": "The strength of the interaction for the item RECEVING the interaction", 
-            "type": "float"
+            "type": "number"
         }, 
         "taxa_from": {
             "description": "Identifier (or URI) of the taxa establishing the interaction.", 
