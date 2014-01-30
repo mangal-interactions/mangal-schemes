@@ -44,9 +44,14 @@
                 "type": "string"
             }, 
             "type": "array"
+        }, 
+        "public": {
+            "description": "Whether the dataset can be viewed by all users", 
+            "type": "boolean"
         }
     }, 
     "required": [
+        "public", 
         "owner", 
         "networks", 
         "name"
